@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger */
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import CardGrid from './components/CardGrid';
@@ -75,15 +76,17 @@ const App = () => {
     const isContinue = cardArray.filter((card) => card.isFliped === false);
     if (!isContinue.length && total > 0) {
       if (!sessionStorage.length) {
+        debugger;
         sessionStorage.setItem('Record', total.toString());
-        return;
       }
-      if (sessionStorage.getItem('Record') > total.toString()) {
+      if (Number(sessionStorage.getItem('Record')) > total) {
+        debugger;
         sessionStorage.setItem('Record', total.toString());
         setCurrentResult(`You have beaten your record. New Record is ${total}`);
         setFinish(true);
         return;
       }
+      debugger;
       setCurrentResult(`Game finished.Total: ${total}.Record: ${sessionStorage.getItem('Record')}`);
       setFinish(true);
     }

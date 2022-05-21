@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger */
 import React from 'react';
 import { Card } from '../App';
 import SingleCard from './SingleCard';
@@ -10,6 +11,7 @@ const CardGrid: React.FC<ICardGridProp> = ({
   handleFlip,
 }) => {
   if (finish) {
+    debugger;
     return (
       <div className="finish_block">
         {currentResult}

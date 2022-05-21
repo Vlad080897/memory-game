@@ -1,5 +1,6 @@
 {
   "name": "new-game",
+  "homepage": "https://vlad080897.github.io/memory-game/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
