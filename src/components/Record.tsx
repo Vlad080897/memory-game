@@ -1,8 +1,16 @@
 import React from 'react';
+import '../App.css';
 
 const Record: React.FC<IRecordProps> = ({ total }) => (
   <div>
-    {total ? `Total: ${total}` : ''}
+    {total
+      ? (
+        <div className="total">
+          Total:
+          {total}
+        </div>
+      )
+      : ''}
   </div>
 );
 

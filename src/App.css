@@ -3,6 +3,12 @@
   margin: 40px auto;
 }
 
+@media screen and (max-width: 550px) {
+  .App {
+    width: 370px;
+  }
+}
+
 button {
   background: none;
   border: 2px solid #fff;
@@ -30,4 +36,8 @@ button:hover {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+}
+
+.total {
+  margin-top: 2rem;
 }
