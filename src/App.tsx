@@ -69,6 +69,8 @@ const App = () => {
       ));
     setTotal(0);
     setFinish(false);
+    setFirstAttemp(null);
+    setSecondAttemp(null);
     setCardArray(baseCardsArray);
   };
 
